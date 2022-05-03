@@ -243,6 +243,8 @@ for instance in master-1 master-2; do
   scp ca.crt ca.key kube-apiserver.key kube-apiserver.crt \
     service-account.key service-account.crt \
     etcd-server.key etcd-server.crt \
+    kube-controller-manager.key kube-controller-manager.crt \
+    kube-scheduler.key  kube-scheduler.crt \
     ${instance}:~/
 done
 ```
