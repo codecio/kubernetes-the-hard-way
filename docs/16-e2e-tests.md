@@ -21,6 +21,10 @@ GO111MODULE=on go install ./kubetest
 > Note: This may take a few minutes depending on your network speed
 
 ## Use the version specific to your cluster
+missing on image. Install first.
+```
+sudo apt install jq
+```
 
 ```
 K8S_VERSION=$(kubectl version -o json | jq -r '.serverVersion.gitVersion')
